@@ -1,0 +1,33 @@
+# General Commands
+alias exec cdp show cdp ne | exc SEP
+alias exec mac show mac address-table | inc
+alias exec proc show proc cpu sort | exc 0.00%  0.00%  0.00%
+alias exec proch show proc cpu history
+alias exec arp show ip arp | inc
+alias exec dhcp show ip dhcp snoop bind
+alias exec hsrp show stand brief
+alias exec proc show proc cpu sort | exc 0.00     0.00     0.00
+# Show Interface Commands
+alias exec sid show int description
+alias exec sidi show int description | inc
+alias exec sis show int status
+alias exec sise show int status error
+alias exec sisi show int status | inc 
+# Show config commands
+alias exec srb sh run | beg
+alias exec sri sh run interface
+alias exec srii sh run | incl
+alias exec srs sh run | sec
+alias exec srs sh run | sec
+alias exec srii sh run | incl
+# Show IP Interface commands
+alias exec sib sh ip int brief
+alias exec sibi sh ip int brief | inc 
+# OSPF commands
+alias exec ospf show run | sec router ospf
+alias exec ospfn show ip ospf neigh
+
+# BGP Commands
+alias exec bgp show run | sec router bgp
+alias exec bgps show bgp summary
+
